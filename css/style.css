@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 460px;
+    height: 480px;
     width: 420px;
     background-color: #1F2937;
     margin: -30px 0 0 0;
@@ -63,6 +63,7 @@ body {
     width: 90%;
     margin: 15px 0;
 }
+
 .character-count-section{
     display: flex;
     flex-direction: row;
@@ -72,7 +73,7 @@ body {
 }
 
 #character-count{
-    width: 160px;
+    width: 180px;
     accent-color: #BE123C;
 }
 
@@ -101,23 +102,27 @@ body {
 
 .passwords{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.65);
+    padding: 10px 0 0 0;
 }
 
 .password-container{
-    width: 160px;
-    height: 30px;
-    background-color: #FFFFFF;
-    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #193153;
+    color: #8C98A9;
+    width: 350px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 20px 20px;
 }
 
 .button-section{
     display: flex;
     justify-content: center;
-}
-
-.password-container{
-    background-color: #193153;
 }
 
 .generate-button{
