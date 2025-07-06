@@ -8,7 +8,11 @@ const noSymbolCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M",
 const characterCount = document.getElementById("character-count-number");
 const characterRange = document.getElementById("character-count");
 
+characterCount.addEventListener("input", (e)=>{
+    characterRange.value = characterCount.value;
+})
 
 characterRange.addEventListener("input", (e) => {
     characterCount.value = characterRange.value;
 })
+
