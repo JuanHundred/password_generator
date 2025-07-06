@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="password-generator">
+        <div class="top-section">
+            <h1>Generate a <br><span  class="top-section-span">random password</span></h1>
+            <h3>Never use an insecure password again!</h3>
+        </div>
+        <div class="middle-section">
+            <div class="character-count-section">
+                <label for="character-count">Character Count: </label>
+                <input type="range" id="character-count" name="character-count" min="8" max="30" value="12" step="1" />
+                <input type="number" name="character-count-number" id="character-count-number" min="8" max="30" value="12"/>
+            </div>
+            <div class="character-type-section">
+                <input type="checkbox" id="number-checkbox" name="number-checkbox" class="checkboxes" checked />
+                <label for="number-checkbox"> Numbers</label><br>
+                <input type="checkbox" id="special-character-checkbox" name="special-character-checkbox" class="checkboxes" checked />
+                <label for="special-character-checkbox"> Special Characters</label><br>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="passwords">
+                <div class="left-password password-container"></div>
+                <div class="right-password password-container"></div>
+            </div>
+            <div class="button-section">
+                <button type="button" class="generate-button">Generate Passwords</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
