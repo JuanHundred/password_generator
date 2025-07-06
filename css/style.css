@@ -1,0 +1,137 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* Base Styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: #193153;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#password-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    width: 420px;
+    background-color: #1F2937;
+    margin: -30px 0 0 0;
+    border-radius: 5px;
+    padding: 60px 20px 0 20px;
+}
+
+.top-section {
+    line-height: 2em;
+}
+
+.top-section-span{
+    color: #BE123C;
+}
+
+.top-section h3{
+    color: #8C98A9;
+}
+
+.middle-section{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px 0;
+}
+.character-count-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#character-count{
+    width: 160px;
+    accent-color: #BE123C;
+}
+
+#character-count-number{
+    width: 35px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.checkboxes{
+    accent-color: #BE123C;
+}
+
+.character-type-section{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+
+.character-type-section label{
+    margin: 0 0 0 5px;
+}
+
+#special-character-checkbox{
+    margin: 0 0 0 15px;
+}
+
+.passwords{
+    display: flex;
+    flex-direction: row;
+}
+
+.password-container{
+    width: 160px;
+    height: 30px;
+    background-color: #FFFFFF;
+    margin: 20px 10px;
+}
+
+.button-section{
+    display: flex;
+    justify-content: center;
+}
+
+.password-container{
+    background-color: #193153;
+}
+
+.generate-button{
+    background-color: #BE123C;
+    border: none;
+    padding: 15px 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+}
+
+.generate-button:hover {
+    cursor: pointer;
+    background-color: #b00d34;
+}
