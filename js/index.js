@@ -49,12 +49,27 @@ function generatePasswords(){
     }else if(!numbersCheckbox.checked && !specialCharactersCheckbox.checked){
         characterType = justAlphabetCharacters;
     }else{
-        characterType = allCharacters
+        characterType = allCharacters;
     }
     generateAPassword(upperPassword);
     generateAPassword(bottomPassword);
 }
 
+function copyPassword(passwordBox){
+    let password = passwordBox.textContent;
+    passwordBox.textContent = "Copied!"
+    navigator.clipboard.writeText(password);
+    setTimeout(()=>{passwordBox.textContent = password}, 1000);
+}
+
 generateButton.addEventListener("click", (e)=>{
     generatePasswords();
+})
+
+upperPassword.addEventListener("click", (e)=>{
+    copyPassword(upperPassword);
+})
+
+bottomPassword.addEventListener("click", (e)=>{
+    copyPassword(bottomPassword);
 })
